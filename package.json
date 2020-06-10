@@ -4,7 +4,8 @@
   "description": "Devon Khosa's homepage.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon",
+    "uglify": "uglifyjs index.js --output script.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
     "mongoose": "^5.9.18",
     "nodemon": "^2.0.4",
     "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.9.4"
   }
 }
