@@ -13,7 +13,11 @@
     height: 100%;
     content: "";
   } */
-
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
 .jumbotron {
     background: none !important;
     opacity: .9;
