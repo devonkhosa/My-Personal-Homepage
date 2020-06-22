@@ -6,23 +6,20 @@ app.set('view engine', 'pug');
 
 app.use(express.static('public'));
 
-
-//route handlers 
+//==route handlers==//
 app.get('/', (req, res)=>{
 res.render('index', {});
 });
-
 app.get('/blog', (req, res)=>{
 res.render('blog', {});
 });
-
 app.get('/contact', (req, res)=>{
 res.render('contact', {});
 });
-
 app.get('/portfolio', (req, res)=>{
 res.render('portfolio', {});
 });
+//========End========//
 
 app.listen(port, () =>{
 console.log(`Server running on port ${port}`);
