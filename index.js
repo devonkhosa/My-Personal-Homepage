@@ -19,6 +19,10 @@ res.render('contact', {});
 app.get('/portfolio', (req, res)=>{
 res.render('portfolio', {});
 });
+app.get('/post-1', (req, res)=>{
+res.render('posts/2020-03-12', {});
+});
+
 //========End========//
 
 app.listen(port, () =>{
