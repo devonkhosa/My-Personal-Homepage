@@ -12,15 +12,17 @@ app.get('/', (req, res)=>{
 res.render('index', {});
 });
 
-app.get('/blog.pug', (req, res)=>{
+app.get('/blog', (req, res)=>{
 res.render('blog', {});
 });
 
-app.get('/contact.pug', (req, res)=>{
+app.get('/contact', (req, res)=>{
 res.render('contact', {});
 });
 
-
+app.get('/portfolio', (req, res)=>{
+res.render('portfolio', {});
+});
 
 app.listen(port, () =>{
 console.log(`Server running on port ${port}`);
