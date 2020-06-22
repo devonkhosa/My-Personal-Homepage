@@ -10,6 +10,14 @@ app.get('/', (req, res)=>{
 res.render('index', {});
 });
 
+app.get('/blog.pug', (req, res)=>{
+res.render('blog', {});
+});
+
+app.get('/contact.pug', (req, res)=>{
+res.render('contact', {});
+});
+
 app.listen(port, () =>{
 console.log(`Server running on port ${port}`);
 });
