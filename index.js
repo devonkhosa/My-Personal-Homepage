@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const port = 8080;
 
 app.set('view engine', 'pug');
 
@@ -25,6 +24,6 @@ res.render('posts/2020-03-12', {});
 
 //========End========//
 
-app.listen(port, () =>{
-console.log(`Server running on port ${port}`);
+app.listen(process.env.PORT || 8080, () =>{
+console.log(`Server running on port ${process.env.PORT}`);
 });
