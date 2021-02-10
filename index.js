@@ -15,6 +15,9 @@ res.render('blog', {});
 app.get('/contact', (req, res)=>{
 res.render('contact', {});
 });
+app.get('/resume', (req, res)=>{
+res.render('resume', {});
+});
 app.get('/portfolio', (req, res)=>{
 res.render('portfolio', {});
 });
