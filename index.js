@@ -21,6 +21,9 @@ res.render('portfolio', {});
 app.get('/post-1', (req, res)=>{
 res.render('posts/2020-03-12', {});
 });
+app.get('/post-2', (req, res)=>{
+res.render('posts/2021-02-10', {});
+});
 
 //========End========//
 
