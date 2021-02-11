@@ -18,7 +18,7 @@ res.render('contact', {});
 app.get('/resume', (req, res)=>{
 res.render('resume', {});
 });
-app.get('/portfolio', (req, res)=>{
+app.get('/projects', (req, res)=>{
 res.render('portfolio', {});
 });
 app.get('/post-1', (req, res)=>{
