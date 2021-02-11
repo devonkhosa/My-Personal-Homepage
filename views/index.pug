@@ -1,10 +1,20 @@
 extends ./layout.pug
 
 block content
+ #homepage
   .jumbotron.jumbotron-fluid
     .container
-      h1.display-5 Hi
-      p.lead I'm Devon - A software developer from Calgary.
-      a.navlink(href='https://ca.linkedin.com/in/devon-khosa-0b94a61a2') devonkhosa@gmail.com
+      h1.display-5.greeting Hi
+      p.lead.intro I'm Devon - A software developer from Calgary.
+      a.navlink.intro(href='https://ca.linkedin.com/in/devon-khosa-0b94a61a2') devonkhosa@gmail.com
       hr.my-4
-      //img(src='/img/giphy.gif')
+      p.lead.intro2 Use the navigation bar above to explore my site!
+    .container
+      .row
+        .jumbotron#Home
+         span.subheading Latest Blog Post
+          a(href='/post-2')
+           h2.post-title An official Update
+           p.lead February 10, 2021
+          hr
+          //img(src='/img/giphy.gif')
