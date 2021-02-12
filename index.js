@@ -15,9 +15,11 @@ res.render('blog', {});
 app.get('/contact', (req, res)=>{
 res.render('contact', {});
 });
-app.get('/resume', (req, res)=>{
-res.render('resume', {});
-});
+
+//app.get('/resume', (req, res)=>{
+//res.render('resume', {});
+//});
+
 app.get('/projects', (req, res)=>{
 res.render('portfolio', {});
 });
