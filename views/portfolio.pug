@@ -1,7 +1,12 @@
 extends ./layout.pug
 
 block content
-  .jumbotron.jumbotron-fluid
-    .container
-      h1.display-4 Under Construction (Portfolio)
-      hr.my-4
+ .jumbotron.jumbotron-fluid
+  .container
+      //h1.display-4 Portfolio
+      //hr.my-4
+  .container 
+   a.card(href='https://frozen-hollows-58282.herokuapp.com/' style='width: 18rem;')
+    img.card-img-top(src='/img/comit-chat-app.png' alt='My COMIT Chat Application')
+    .card-body
+      p.card-text One of my first projects, build while taking the COMIT NodeJS program.
