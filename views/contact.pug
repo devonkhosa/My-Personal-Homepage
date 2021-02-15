@@ -3,5 +3,15 @@ extends ./layout.pug
 block content
   .jumbotron.jumbotron-fluid
     .container
-      h1.display-4 Under Construction (Contact)
+      h1.display-4 Send us a message!
       hr.my-4
+      .container
+        div
+        form(action='/send' method='get')
+          div
+            input(type='email' name='to' placeholder='Email')
+          div
+            input(name='subject' placeholder='Subject')
+          div
+            textarea(name='text' cols='40' rows='5' placeholder='Write what you want to send')
+          button Click Here To Send
