@@ -6,12 +6,13 @@ block content
       h1.display-4 Send us a message!
       hr.my-4
       .container
+      div
+      form(action='/send' method='get')
         div
-        form(action='/send' method='get')
-          div
-            input(type='email' name='to' placeholder='Email')
-          div
-            input(name='subject' placeholder='Subject')
-          div
-            textarea(name='text' cols='40' rows='5' placeholder='Write what you want to send')
-          button Click Here To Send
+          label Email Address
+          input.form-control(name='subject' placeholder='name@example.com')
+        div
+          label Message
+          textarea.form-control(name='text' cols='40' rows='5' placeholder='Write what you want to send')
+          br
+        button.btn.btn-secondary.btn-sm Click Here To Send

@@ -45,7 +45,8 @@ var smtpTransport = nodemailer.createTransport({
 
 app.get('/send',function(req,res){
     var mailOptions={
-        to : req.query.to,
+        to : 'khosadevon@gmail.com',
+        //email : req.query.subject,
         subject : req.query.subject,
         text : req.query.text
     }
