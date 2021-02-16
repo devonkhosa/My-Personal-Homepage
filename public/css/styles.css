@@ -74,6 +74,11 @@ img {
   visibility: hidden;
  }
  
+ img.li-logo {
+   height: 18%;
+   width: 18%;
+ }
+
 p.lead.intro2 {
   margin-bottom: 100px;
   font-weight: bold;
