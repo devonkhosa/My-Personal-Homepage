@@ -24,7 +24,7 @@
     "mongoose": "^5.9.18",
     "nodemailer": "^6.4.18",
     "nodemon": "^2.0.4",
-    "pug": "^3.0.0"
+    "pug": "^3.0.1"
   },
   "devDependencies": {
     "uglify-js": "^3.9.4"
